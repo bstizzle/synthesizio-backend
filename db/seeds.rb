@@ -12,4 +12,5 @@ ben = User.create(username: "ben", password_digest: "ben")
 daftpunk = User.create(username: "daft", password_digest: "punk")
 
 testsynth = Synth.create(user: ben, name: "test synth", osc_type_1: 'sine', osc_type_2: 'sawtooth', osc_freq_1: 440, osc_freq_2: 880, osc_gain: 0.4, distortion_curve: 'soft', distortion_gain: 20, delay_length: 0.2)
-emptyTest = Synth.create(user: ben);
+testsynth2 = Synth.create(user: ben, name: "test synth 2: electric boogaloo", osc_type_1: 'square', osc_type_2: 'triangle', osc_freq_1: 110, osc_freq_2: 330, osc_gain: 0.1, distortion_curve: 'soft', distortion_gain: 5, delay_length: 0)
+emptyTest = Synth.create(user: ben, name: "empty synth");
