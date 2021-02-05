@@ -29,7 +29,7 @@ class SynthsController < ApplicationController
     private
 
     def synth_params
-        params.permit(:user_id, :osc_type_1, :osc_type_2, :osc_freq_1, :osc_freq_2,
+        params.permit(:user_id, :name, :osc_type_1, :osc_type_2, :osc_freq_1, :osc_freq_2,
             :osc_gain, :distortion_curve, :distortion_gain, :delay_length)
     end
 end
