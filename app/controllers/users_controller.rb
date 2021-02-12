@@ -40,7 +40,7 @@ class UsersController < ApplicationController
                 errors: @user.errors.full_messages
             }
         end
-    end 
+    end
 
     def update
         @user = User.find(params[:id])
@@ -57,6 +57,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:username, :password, :session)
+        params.permit(:username, :password)
     end
 end
