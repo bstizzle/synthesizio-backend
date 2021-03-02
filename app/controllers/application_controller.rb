@@ -25,4 +25,8 @@ class ApplicationController < ActionController::Base
     def set_user
         @user = User.find_by(id: session[:user_id])
     end
+
+    def home
+        render json: {message: "Server is up!"}
+    end
 end
