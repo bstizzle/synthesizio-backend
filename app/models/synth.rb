@@ -1,6 +1,5 @@
 class Synth < ApplicationRecord
   belongs_to :user
 
-  validates :name, presence: true
-  validates :name, length: { minimum: 1 }
+  validates :name, presence: true, length: { minimum: 1 }
 end
